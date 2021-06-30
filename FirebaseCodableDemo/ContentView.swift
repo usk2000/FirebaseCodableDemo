@@ -8,9 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = ViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+            
+            List {
+                ForEach.init(self.viewModel.samples, id: \.id) { sample in
+                    VStack(alignment: .leading) {
+                        Text(sample.title)
+                            .font(.body)
+                        Text(sample.date.description)
+                            .font(.caption)
+                    }
+                }
+                
+            }.onAppear {
+                
+                viewModel.fetchSingleDocument()
+                viewModel.fetchSamples()
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                    self.viewModel.observeDocuments()
+                }
+                
+            }
+            .navigationBarTitle("Sample Documents")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button.init(action: { self.viewModel.addDocument() }, label: {
+                Image(systemName: "plus")
+            }))
+            
+        }
+
     }
 }
 

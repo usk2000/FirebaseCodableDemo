@@ -6,9 +6,17 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct FirebaseCodableDemoApp: App {
+    
+    init() {
+        //setup firebase
+        FirebaseApp.configure()
+                        
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

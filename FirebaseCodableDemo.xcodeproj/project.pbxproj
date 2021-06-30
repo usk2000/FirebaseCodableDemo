@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8AB9C6B268BE694009BE1DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8AB9C6A268BE694009BE1DB /* GoogleService-Info.plist */; };
+		A8AB9C6D268BE942009BE1DB /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB9C6C268BE942009BE1DB /* SampleModel.swift */; };
 		A8C50B572684541B006DEEAC /* FirebaseCodableDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C50B562684541B006DEEAC /* FirebaseCodableDemoApp.swift */; };
 		A8C50B592684541B006DEEAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C50B582684541B006DEEAC /* ContentView.swift */; };
 		A8C50B5B2684541D006DEEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C50B5A2684541D006DEEAC /* Assets.xcassets */; };
 		A8C50B5E2684541D006DEEAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C50B5D2684541D006DEEAC /* Preview Assets.xcassets */; };
 		A8C50B692684541D006DEEAC /* FirebaseCodableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C50B682684541D006DEEAC /* FirebaseCodableDemoTests.swift */; };
 		A8C50B742684541D006DEEAC /* FirebaseCodableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C50B732684541D006DEEAC /* FirebaseCodableDemoUITests.swift */; };
-		A8C50B842684548B006DEEAC /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = A8C50B832684548B006DEEAC /* SwiftPackageProductDependency */; };
+		A8C50B842684548B006DEEAC /* FirebaseCodable in Frameworks */ = {isa = PBXBuildFile; productRef = A8C50B832684548B006DEEAC /* FirebaseCodable */; };
 		A8C50B86268454C1006DEEAC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C50B85268454C1006DEEAC /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8AB9C6A268BE694009BE1DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A8AB9C6C268BE942009BE1DB /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		A8C50B532684541B006DEEAC /* FirebaseCodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseCodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C50B562684541B006DEEAC /* FirebaseCodableDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCodableDemoApp.swift; sourceTree = "<group>"; };
 		A8C50B582684541B006DEEAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C50B842684548B006DEEAC /* BuildFile in Frameworks */,
+				A8C50B842684548B006DEEAC /* FirebaseCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,8 @@
 				A8C50B562684541B006DEEAC /* FirebaseCodableDemoApp.swift */,
 				A8C50B582684541B006DEEAC /* ContentView.swift */,
 				A8C50B85268454C1006DEEAC /* ViewModel.swift */,
+				A8AB9C6C268BE942009BE1DB /* SampleModel.swift */,
+				A8AB9C6A268BE694009BE1DB /* GoogleService-Info.plist */,
 				A8C50B5A2684541D006DEEAC /* Assets.xcassets */,
 				A8C50B5F2684541D006DEEAC /* Info.plist */,
 				A8C50B5C2684541D006DEEAC /* Preview Content */,
@@ -154,7 +160,7 @@
 			);
 			name = FirebaseCodableDemo;
 			packageProductDependencies = (
-				A8C50B832684548B006DEEAC /* SwiftPackageProductDependency */,
+				A8C50B832684548B006DEEAC /* FirebaseCodable */,
 			);
 			productName = FirebaseCodableDemo;
 			productReference = A8C50B532684541B006DEEAC /* FirebaseCodableDemo.app */;
@@ -245,6 +251,7 @@
 			files = (
 				A8C50B5E2684541D006DEEAC /* Preview Assets.xcassets in Resources */,
 				A8C50B5B2684541D006DEEAC /* Assets.xcassets in Resources */,
+				A8AB9C6B268BE694009BE1DB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +279,7 @@
 				A8C50B592684541B006DEEAC /* ContentView.swift in Sources */,
 				A8C50B86268454C1006DEEAC /* ViewModel.swift in Sources */,
 				A8C50B572684541B006DEEAC /* FirebaseCodableDemoApp.swift in Sources */,
+				A8AB9C6D268BE942009BE1DB /* SampleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,7 +595,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A8C50B832684548B006DEEAC /* SwiftPackageProductDependency */ = {
+		A8C50B832684548B006DEEAC /* FirebaseCodable */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FirebaseCodable;
 		};
