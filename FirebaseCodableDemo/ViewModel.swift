@@ -45,7 +45,7 @@ extension ViewModel {
                 
                 guard let self = self else { return }
                 
-                self.lastSnapshot = response.lastSnapshot
+                self.lastSnapshot = response.items.count != 10 ? response.lastSnapshot : nil
                 self.samples = response.items
                 
                 debugPrint("count : \(self.samples.count)")
@@ -77,7 +77,7 @@ extension ViewModel {
             switch result {
             case .success(let response):
                 guard let self = self else { return }
-                self.lastSnapshot = response.lastSnapshot
+                self.lastSnapshot = response.items.count != 10 ? response.lastSnapshot : nil
                 self.samples += response.items
                 
             case .failure(let error):
@@ -138,7 +138,9 @@ extension ViewModel {
                 
                 guard let self = self else { return }
                 
-                FCSnapshotDiff.apply(diffs: snapshotDiff, value: &self.samples)
+                var samples = self.samples
+                FCSnapshotDiff.apply(diffs: snapshotDiff, value: &samples)
+                self.samples = samples
                 
             case .failure(let error):
                 debugPrint(error)
