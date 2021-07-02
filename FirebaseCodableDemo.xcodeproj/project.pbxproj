@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A832851B268E995F00E775AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A8AB9C6A268BE694009BE1DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A8AB9C6C268BE942009BE1DB /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		A8C50B532684541B006DEEAC /* FirebaseCodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseCodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +106,7 @@
 		A8C50B552684541B006DEEAC /* FirebaseCodableDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A832851B268E995F00E775AD /* README.md */,
 				A8C50B562684541B006DEEAC /* FirebaseCodableDemoApp.swift */,
 				A8C50B582684541B006DEEAC /* ContentView.swift */,
 				A8C50B85268454C1006DEEAC /* ViewModel.swift */,
